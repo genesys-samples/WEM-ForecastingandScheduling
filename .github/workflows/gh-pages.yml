@@ -1,0 +1,40 @@
+name: Build and Deploy to Azure
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    if: github.repository_owner == 'genesys-samples'
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.96.0'
+          extended: true
+
+      - name: Build
+        run: hugo
+
+      - name: Login via AZ module
+        uses: azure/login@v1
+        with:
+          creds: ${{secrets.GENESYS_SAMPLES_SP}}
+          
+      - name: Upload Hugo to Azure Blob
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob delete-batch --account-name 'genesyssamples' --source '$web' --pattern 'workshops/${{ github.event.repository.name }}/*'
+            az storage blob upload-batch --account-name 'genesyssamples' --source ./public --destination '$web/workshops/${{ github.event.repository.name }}'
