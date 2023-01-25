@@ -1,5 +1,5 @@
 ---
-title: "First Lesson"
+title: "Organize your Teams into Business Units and Management Units"
 chapter: false
 weight: 10
 ---
