@@ -1,5 +1,5 @@
 ---
-title: "First Time Setup"
+title: "First-Time Setup"
 chapter: true
 weight: 20
 ---
