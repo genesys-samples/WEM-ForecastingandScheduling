@@ -22,6 +22,9 @@ The first step we need to do to import our historical data will be adding the qu
 1. New Orders
 2. Existing Accounts
 
+In both of these queues, you'll need to add the agents that you wish to schedule. For testing purposes, choose at least 2 other users in your org that you'll use as part of the workshop. Add your Genesys Cloud CX user and the other users you've chosen to both of the queues. 
+![Add Queue Members](/images/addQueueMembers.jpg)
+
 #### Import Your Data
 We have provided you with a data set to import. You'll need to navigate to this GitHub repository, https://github.com/genesys-samples/WFMHistoricalDataImport, and download the CSV file to your local machine. You'll then need to follow the steps outlined in this article to import the CSV file's data into your Genesys Cloud CX org. https://help.mypurecloud.com/articles/import-historical-data/
 

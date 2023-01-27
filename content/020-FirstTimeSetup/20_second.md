@@ -1,5 +1,5 @@
 ---
-title: "Use Service Goal Templates and Planning Groups for Granular Forecasting and Scheduling"
+title: "Service Goal Templates and Planning Groups"
 chapter: false
 weight: 20
 ---
