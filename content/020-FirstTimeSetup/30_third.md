@@ -39,7 +39,7 @@ Before creating our work plan, there are a few pieces of information we need to 
     - Drag break activities onto the shift at 10 am and 2 pm (whilst previewing the 8 am shift start)
     - Lastly, drag a meal activity onto the shift at noon. The shift should look like the following: 
     ![Regular Shift](/images/regularShift.jpg)
-9. Lastly, click on the agents tab and then add your agents to this work plan. Once you've done that, validate and save your work plan
+9. Lastly, click on the agent's tab and then add your agents to this work plan. Once you've done that, validate and save your work plan
 ![Add Agents to Work Plan](/images/addAgentsToWorkPlan.jpg)
 
         
