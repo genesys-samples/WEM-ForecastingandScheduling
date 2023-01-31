@@ -31,6 +31,7 @@ These are the only two steps to complete for making a business unit as part of o
 ![Create MU](/images/createMU.jpg)
 3. Click add and create a management unit named "Customer Service"
 4. Repeat step 3 but name this management unit "Sales"
+5. In the Sales Management Unit, navigate to the "Time-off Requests" tab and toggle it on. You can leave the default submission range constraint.
 
 We will be returning to some of the settings for management units later in the workshop, but if you want to read about all the options, view this resource article. https://help.mypurecloud.com/articles/create-new-management-unit/ 
 
