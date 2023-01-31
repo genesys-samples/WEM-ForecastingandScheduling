@@ -4,9 +4,9 @@ chapter: true
 weight: 90
 ---
 
-# Conclusion
+# Finished
 
-Congrats! You've reached the end of today's workshop.
-Please fill out today's feedback form via this [TODO](TODO)
+Congrats! You now know how to leverage the WorkForce Administration tools for forecasting and scheduling in Genesys Cloud CX. You also know how an agent can interact with their schedule as well! 
 
-{{% children showhidden="false" %}}
+## Feedback and Questions
+Genesys is always striving for improvement. If you have any suggestions on how to improve this workshop or have any questions about this workshop, please contact us at workshops@genesys.com.
